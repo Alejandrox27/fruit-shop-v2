@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("images/fruits-background.jpg");
+    background-size: cover;
+}
+
+.background{
+    background-color: rgba(255,227,191,.6);
+    margin-top: 0;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}

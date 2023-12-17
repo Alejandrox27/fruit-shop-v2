@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./scripts/scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <main class="container mt-5">
+            <div class="row text-center">
+                <h1 class="mb-5">Shopping cart v.2</h1>
+
+                <article class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry 🍓</h5>
+                            <p class="text-secondary fs-5">$100</p>
+                            <button class="btn btn-outline-primary" data-fruit="Strawberry" data-price="100">Add</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Banana 🍌</h5>
+                            <p class="text-secondary fs-5">$150</p>
+                            <button class="btn btn-outline-primary" data-fruit="Banana" data-price="150">Add</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple 🍎</h5>
+                            <p class="text-secondary fs-5">$200</p>
+                            <button class="btn btn-outline-primary" data-fruit="Apple" data-price="200">Add</button>
+
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <section class="container mt-3">
+            <ul class="list-group" id="shopping-cart">
+            </ul>
+        </section>
+
+        <template id="template">
+            <li class="list-group-item d-flex align-items-center bg-dark bg-gradient text-light">
+                <span class="badge bg-primary rounded-pill m-2">0</span>
+                <span class="lead">Strawberry</span>
+            </li>
+        </template>
+
+        <template id="price">
+            <li class="list-group-item d-flex align-items-center text-center justify-content-between">
+                <p class="fs-4 mb-0">Total: $<span id="total-price">0</span></p>
+                <div class="buttons p-0 m-0">
+                    <button class="btn btn-success">Add</button>
+                    <button class="btn btn-danger">Remove</button>
+                </div>
+            </li>
+        </template>
+    </div>
+</body>
+</html>

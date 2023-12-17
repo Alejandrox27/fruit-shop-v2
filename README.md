@@ -7,7 +7,7 @@
   <h2>🍊 features and functionalities 🍌</h2>
   <p>In this basic virtual shop, you can choose different fruits to add to the shopping cart<br>
     you can see all these articles and buy them, it's only a basic fruit shop.
-    you can see this page here: 
+    you can see this page here: https://fruit-shop-v2.netlify.app/
   </p>
 </div><br>
 
